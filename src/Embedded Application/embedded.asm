@@ -74,12 +74,12 @@ loop:
     li a0, 0x121
     ecall
 
-    # If button 0 was pressed, count up
+    # If button 0 was pressed, count down
     beqz t4, not_b0
     addi t0, t0, -1
 not_b0:
 
-    # If button 1 was pressed, count down
+    # If button 1 was pressed, count up
     beqz t5, not_b1
     addi t0, t0, 1
 not_b1:
